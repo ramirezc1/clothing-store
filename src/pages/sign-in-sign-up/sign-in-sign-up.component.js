@@ -1,6 +1,7 @@
 import React from "react";
 import "./sign-in-sign-up.style.scss";
 import SignIn from "../../components/sign-in/sign-in.componet";
+import SignUp from "../../components/sign-up/sign-up.component";
 
 const SignInAndSignUpPage = () => {
   return (
@@ -8,7 +9,8 @@ const SignInAndSignUpPage = () => {
       className="sign-in-and-sign-up
   "
     >
-      <SignIn></SignIn>
+      <SignIn />
+      <SignUp />
     </div>
   );
 };
