@@ -19,6 +19,7 @@ function* fechCollectionsAsync() {
       convertCollectionsSnapshotToMap,
       snapshot
     );
+
     yield put(fetchCollectionsSuccess(collectionsMap));
   } catch (error) {
     yield put(fetchCollectionsFailure(error.message));
@@ -33,5 +34,5 @@ export function* fetchCollectionsStart() {
 }
 
 export function* shopSagas() {
-  yield all([call(fetchCollectionsSuccess)]);
+  yield all([call(fetchCollectionsStart)]);
 }
