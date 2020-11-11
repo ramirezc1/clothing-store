@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 const buttonStyles = css`
   background-color: black;
   color: white;
+  border: none;
 
   &:hover {
     background-color: white;
@@ -37,6 +38,7 @@ const getButtonStyles = (props) => {
   if (props.isGoogleSignIn) {
     return googleSignInStyles;
   }
+
   return props.inverted ? invertedButtonStyles : buttonStyles;
 };
 
@@ -51,7 +53,6 @@ export const CustomButtonContainer = styled.button`
   text-transform: uppercase;
   font-family: "Open Sans Condensed";
   font-weight: bolder;
-  border: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
