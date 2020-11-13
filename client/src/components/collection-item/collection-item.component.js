@@ -13,7 +13,7 @@ import {
 
 const CollectionItem = ({ item, addItem }) => {
   const { name, price, imageUrl } = item;
-
+  console.log(imageUrl);
   return (
     <CollectionItemContainer>
       <BackgroundImage className="image" imageUrl={imageUrl} />
